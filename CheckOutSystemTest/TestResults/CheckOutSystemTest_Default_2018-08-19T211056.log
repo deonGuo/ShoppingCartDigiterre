@@ -1,0 +1,60 @@
+﻿2018-08-19T21:10:55.9973902+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-08-19T21:10:56.0951294+01:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-08-19T21:10:56.0951294+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\deong\source\repos\CheckOutSystemTest\CheckOutSystemTest\bin\Debug\CheckOutSystemTest.dll
+2018-08-19T21:10:56.0951294+01:00;VSTestExecutionThread;Info;Profile: Default
+2018-08-19T21:11:06.1538341+01:00;Thread#13;Info;Discovering target: Default
+2018-08-19T21:11:06.1538341+01:00;Thread#13;Info;Discovering tests from assembly: C:\Users\deong\source\repos\CheckOutSystemTest\CheckOutSystemTest\bin\Debug\CheckOutSystemTest.dll
+Appdomain Disposed
+Test Suite Dump
+#0: CheckOutSystemTest/Default - 
+#1: Default - 
+#2: CheckOutSystemTest - 
+#3: Add products to shopping cart - 
+#26: Add a mixture of valid and invalid products to the cart and calculate the total, apple - TestAssembly:CheckOutSystemTest/Feature:Add+products+to+shopping+cart/Scenario:Add+a+mixture+of+valid+and+invalid+products+to+the+cart+and+calculate+the+total%2c+apple
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #26 from normal test queue 
+Thread#0:Scheduler: considering testitem #26 for thread 0
+Thread#0:TestItem#26:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#26:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#26:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #26 for thread 0
+Thread#0:Scheduler: Test #26 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for CheckOutSystemTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\deong\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.7.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #26/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have an empty shopping cart
+Thread#0:T:done: AddToShoppingCart.GivenIHaveAnEmptyShoppingCart() (0.0s)
+Thread#0:B:When I add apple with quantity 1 to the cart
+Thread#0:T:done: AddToShoppingCart.WhenIAddWithQuantityToTheCart("apple", "1") (0.0s)
+Thread#0:B:And I add watermelon with quantity 10 to the cart
+Thread#0:T:Product [WATERMELON] NOT available from the catalogue.
+Thread#0:T:Item NOT added
+Thread#0:T:done: AddToShoppingCart.WhenIAddWithQuantityToTheCart("watermelon", "10") (0.0s)
+Thread#0:B:And I add apple with quantity 2 to the cart
+Thread#0:T:done: AddToShoppingCart.WhenIAddWithQuantityToTheCart("apple", "2") (0.0s)
+Thread#0:B:And I add apple with quantity 0 to the cart
+Thread#0:T:quantity cannot be negative
+Thread#0:T:Item NOT added
+Thread#0:T:done: AddToShoppingCart.WhenIAddWithQuantityToTheCart("apple", "0") (0.0s)
+Thread#0:B:And I add orange with quantity 9999 to the cart
+Thread#0:T:done: AddToShoppingCart.WhenIAddWithQuantityToTheCart("orange", "9999") (0.0s)
+Thread#0:B:Then the total cost is 250155 pence
+Thread#0:T:done: AddToShoppingCart.ThenTheTotalCostIsPence(250155) (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #26/0 is finished on thread #0 as Succeeded within 0.3928259 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
